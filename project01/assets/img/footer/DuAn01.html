@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/index.html#! -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset css -->
+    <link rel="stylesheet" href="./DuAn01_files/reset.css">
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./DuAn01_files/css2" rel="stylesheet">
+    <!-- style css -->
+    <link rel="stylesheet" href="./DuAn01_files/style.css">
+    <title>DuAn01</title>
+  <style>.--savior-overlay-transform-reset {
+  transform: none !important;
+}
+.--savior-overlay-z-index-top {
+  z-index: 2147483643 !important;
+}
+.--savior-overlay-position-relative {
+  position: relative;
+}
+.--savior-overlay-position-static {
+  position: static !important;
+}
+.--savior-overlay-overflow-hidden {
+  overflow: hidden !important;
+}
+.--savior-overlay-overflow-x-visible {
+  overflow-x: visible !important;
+}
+.--savior-overlay-overflow-y-visible {
+  overflow-y: visible !important;
+}
+.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+.--savior-overlay-display-none {
+  display: none !important;
+}
+.--savior-overlay-clearfix {
+  clear: both;
+}
+.--savior-overlay-reset-filter {
+  filter: none !important;
+  backdrop-filter: none !important;
+}
+.--savior-tooltip-host {
+  z-index: 9999;
+  position: absolute;
+  top: 0;
+}
+/*Override css styles for Twitch.tv*/
+main.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+.modal__backdrop.--savior-overlay-z-index-reset {
+  position: static !important;
+}
+main.--savior-overlay-z-index-top {
+  z-index: auto !important;
+}
+main.--savior-overlay-z-index-top .channel-root__player-container + div,
+main.--savior-overlay-z-index-top .video-player-hosting-ui__container + div {
+  opacity: 0.1;
+}
+/*Dirty hack for facebook big video page e.g: https://www.facebook.com/abc/videos/...*/
+.--savior-backdrop {
+  position: fixed !important;
+  z-index: 2147483642 !important;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw !important;
+  background-color: rgba(0,0,0,0.9);
+}
+.--savior-overlay-twitter-video-player {
+  position: fixed;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
+}
+.--savior-overlay-z-index-reset [class*="DivSideNavContainer"],
+.--savior-overlay-z-index-reset [class*="DivHeaderContainer"],
+.--savior-overlay-z-index-reset [class*="DivBottomContainer"],
+.--savior-overlay-z-index-reset [class*="DivCategoryListWrapper"],
+.--savior-overlay-z-index-reset [data-testid="sidebarColumn"],
+.--savior-overlay-z-index-reset header[role="banner"],
+.--savior-overlay-z-index-reset [data-testid="cellInnerDiv"]:not(.--savior-overlay-z-index-reset),
+.--savior-overlay-z-index-reset [aria-label="Home timeline"]>div:first-child,
+.--savior-overlay-z-index-reset [aria-label="Home timeline"]>div:nth-child(3) {
+  z-index: -1 !important;
+}
+.--savior-overlay-z-index-reset [data-testid="cellInnerDiv"] .--savior-backdrop+div {
+  z-index: 2147483643 !important;
+}
+.--savior-overlay-z-index-reset [data-testid="primaryColumn"]>[aria-label="Home timeline"] {
+  z-index: 0 !important;
+}
+.--savior-overlay-z-index-reset#mtLayer,
+.--savior-overlay-z-index-reset.media-layer {
+  z-index: 3000 !important;
+}
+.--savior-overlay-position-relative [class*="SecBar_secBar_"],
+.--savior-overlay-position-relative .woo-box-flex [class*="Frame_top_"] {
+  z-index: 0 !important;
+}
+.--savior-overlay-position-relative .vue-recycle-scroller__item-view:not(.--savior-overlay-z-index-reset),
+.--savior-overlay-position-relative .woo-panel-main[class*="BackTop_main_"],
+.--savior-overlay-position-relative [class*="Main_side_"] {
+  z-index: -1 !important;
+}
+/* Fix conflict css with zingmp3 */
+.zm-video-modal.--savior-overlay-z-index-reset {
+  position: absolute;
+}
+/* Dirty hack for xvideos99 */
+#page #main.--savior-overlay-z-index-reset {
+  z-index: auto !important;
+}
+/* Overlay for ok.ru */
+#vp_w.--savior-overlay-z-index-reset.media-layer.media-layer__video {
+  overflow-y: hidden;
+  z-index: 2147483643 !important;
+}
+/* Fix missing controller for tv.naver.com */
+.--savior-overlay-z-index-top.rmc_controller,
+.--savior-overlay-z-index-top.rmc_setting_intro,
+.--savior-overlay-z-index-top.rmc_highlight,
+.--savior-overlay-z-index-top.rmc_control_settings {
+  z-index: 2147483644 !important;
+}
+/* Dirty hack for douyi.com */
+.swiper-wrapper.--savior-overlay-z-index-reset .swiper-slide:not(.swiper-slide-active),
+.swiper-wrapper.--savior-overlay-transform-reset .swiper-slide:not(.swiper-slide-active) {
+  display: none;
+}
+.videoWrap + div > div {
+  pointer-events: unset;
+}
+/* Dirty hack for fpt.ai */
+.mfp-wrap.--savior-overlay-z-index-top {
+  position: relative;
+}
+.mfp-wrap.--savior-overlay-z-index-top .mfp-close {
+  display: none;
+}
+.mfp-wrap.--savior-overlay-z-index-top .mfp-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset + nav {
+  z-index: -1 !important;
+}
+section.--savior-overlay-z-index-reset>main[role="main"].--savior-overlay-z-index-reset section.--savior-overlay-z-index-reset div.--savior-overlay-z-index-reset ~ div {
+  position: relative;
+}
+div[class^="tiktok"].--savior-overlay-z-index-reset {
+  z-index: 2147483644 !important;
+}
+.--savior-lightoff-fix section:not(:has([class*="--savior-overlay-"])),
+.--savior-lightoff-fix section.section_video ~ section {
+  z-index: -1;
+  position: relative;
+}
+.--savior-lightoff-fix header,
+.--savior-lightoff-fix footer,
+.--savior-lightoff-fix .top-header,
+.--savior-lightoff-fix .swiper-container,
+.--savior-lightoff-fix #to_top,
+.--savior-lightoff-fix #button-adblock {
+  z-index: -1 !important;
+}
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+</style></head>
+  <body style="height: 10000px">
+     <!-- HEADER -->
+
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body-header">
+          <!-- logo -->
+          <img src="./DuAn01_files/logo.svg" alt="Lesson" class="logo">
+          <!-- nav -->
+          <nav class="nav">
+            <ul>
+              <li class="active">
+                <a href="http://127.0.0.1:5500/index.html#!">Home</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">Courses</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">Pricing</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">Reviews</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- btn - nút bấm -->
+          <div class="action">
+            <a href="http://127.0.0.1:5500/index.html#!" class="btn btn-sign-up">Sign UP</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN HERO -->
+    <main>
+      <div class="main">
+        <!-- tạo ra 1 class main, bên trong có class Hero-->
+        <div class="hero">
+          <div class="main-content">
+            <div class="body">
+              <!-- khối trái media-block  -->
+              <div class="media-block">
+                <img src="./DuAn01_files/1.jpg" alt="Learn without limits and spread knowledge." class="img">
+                <!-- tạo ra 1 class herosummary bọc khối trái  lại -->
+                <div class="hero-summary">
+                  <!-- icon 1 -->
+                  <div class="item">
+                    <div class="icon">
+                      <img src="./DuAn01_files/1.svg" alt="">
+                    </div>
+                    <div class="info">
+                      <p class="label">20 Courses</p>
+                      <p class="title">UI/UX Design</p>
+                    </div>
+                  </div>
+                  <!-- icon2 -->
+                  <div class="item">
+                    <div class="icon icon2">
+                      <img src="./DuAn01_files/2.svg" alt="">
+                    </div>
+                    <div class="info">
+                      <p class="label">20 Courses</p>
+                      <p class="title">Development</p>
+                    </div>
+                  </div>
+                  <!-- icon3 -->
+                  <div class="item">
+                    <div class="icon icon3">
+                      <img src="./DuAn01_files/3.svg" alt="">
+                    </div>
+                    <div class="info">
+                      <p class="label">30 Courses</p>
+                      <p class="title">Marketing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- khối phải content-block -->
+
+              <div class="content-block">
+                <!-- heading -->
+                <h1 class="heading">
+                  Learn without limits and spread knowledge.
+                </h1>
+                <!-- đoạn văn bản sau heading -->
+                <p class="desc">
+                  Build new skills for that “this is my year” feeling with
+                  courses, certificates, and degrees from world-class
+                  universities and companies.
+                </p>
+                <!-- khối kêu gọi hành động  (CTA)-->
+                <div class="cta-group">
+                  <a href="http://127.0.0.1:5500/index.html#!" class="btn hero-cta">See Courses</a>
+                  <button class="watch-viedo">
+                    <div class="icon">
+                      <img src="./DuAn01_files/41.svg" alt="">
+                    </div>
+                    <span>Watch Video</span>
+                  </button>
+                </div>
+                <!-- đoạn văn bản sau khối CTA -->
+                <p class="desc desc1">Recent engagement</p>
+                <!-- đoạn fb  -->
+                <p class="desc desc2">
+                  <strong>50K</strong> Students <strong>70</strong>+ Courses
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =====POPULAR====== -->
+        <div class="popular">
+          <div class="main-content">
+            <!-- popular Trên -->
+            <div class="popular-top">
+              <!-- phần bên trái -->
+              <div class="info">
+                <n2 class="heading-lv2">Our popular courses</n2>
+                <p class="desc">
+                  Build new skills with new trendy courses and shine for the
+                  next future career.
+                </p>
+              </div>
+              <!-- phần bên phải  -->
+              <div class="controls">
+                <button class="controls-btn">
+                  <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 1L1 7L7 13" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+                <button class="controls-btn">
+                  <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 7L1 13" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <!-- popular dưới -->
+            <div class="popular-bot">
+              <!-- khối ảnh số 1 -->
+              <div class="popular-item">
+                <a href="http://127.0.0.1:5500/index.html#!"><img src="./DuAn01_files/p1.jpg" alt="Basic web design" class="thumb"></a>
+                <div class="info">
+                  <div class="head">
+                    <h3 class="title">
+                      <a class="break-all line-clamp" href="http://127.0.0.1:5500/index.html#!">Basic web design</a>
+                    </h3>
+                    <div class="rating">
+                      <img src="./DuAn01_files/Star 6.svg" alt="" class="star">
+                      <span class="value">4.5</span>
+                    </div>
+                  </div>
+                  <p class="desc line-clamp">
+                    Get the best course, gain knowledge and shine for your
+                    future career.
+                  </p>
+                  <div class="foot">
+                    <span class="price">$120.75</span>
+                    <button class="btn btn-book">Book Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- khối ảnh số 2 -->
+              <div class="popular-item">
+                <a href="http://127.0.0.1:5500/index.html#!">
+                  <img src="./DuAn01_files/p2.jpg" alt="Basic web design" class="thumb"></a>
+                <div class="info">
+                  <div class="head">
+                    <h3 class="title">
+                      <a class="break-all line-clamp" href="http://127.0.0.1:5500/index.html#!">UI/UX design</a>
+                    </h3>
+                    <div class="rating">
+                      <img src="./DuAn01_files/Star 6.svg" alt="" class="star">
+                      <span class="value">4.5</span>
+                    </div>
+                  </div>
+                  <p class="desc line-clamp">
+                    Get the best course, gain knowledge and shine for your
+                    future career.
+                  </p>
+                  <div class="foot">
+                    <span class="price">$120.75</span>
+                    <button class="btn btn-book">Book Now</button>
+                  </div>
+                </div>
+              </div>
+              <!-- khối ảnh số 3 -->
+              <div class="popular-item">
+                <a href="http://127.0.0.1:5500/index.html#!"><img src="./DuAn01_files/p3.jpg" alt="Basic web design" class="thumb"></a>
+                <div class="info">
+                  <div class="head">
+                    <h3 class="title">
+                      <a class="break-all line-clamp" href="http://127.0.0.1:5500/index.html#!">Web App design</a>
+                    </h3>
+                    <div class="rating">
+                      <img src="./DuAn01_files/Star 6.svg" alt="" class="star">
+                      <span class="value">4.5</span>
+                    </div>
+                  </div>
+                  <p class="desc line-clamp break-all">
+                    Get the best course, gain knowledge and shine for your
+                    future career.
+                  </p>
+                  <div class="foot">
+                    <span class="price">$120.75</span>
+                    <button class="btn btn-book">Book Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =====FEEDBACK =========-->
+        <div class="feedback">
+          <div class="main-content">
+            <div class="feeback-list">
+              <!-- fb số 1-->
+              <div class="feeback-item">
+                <!-- khối trái -->
+                <div class="info">
+                  <img src="./DuAn01_files/avt1.png" alt="" class="avt">
+                    <p class="member-name">Peter Moor</p>
+                    <p class="desc">Student of Web Design</p>
+                    <div class="dots">
+                      <span class="dot active"></span>
+                      <span class="dot "></span>
+                      <span class="dot"></span>
+                    </div>
+                  
+                </div>
+                <!-- khối phải -->
+                <div class="content">
+                  <img src="./DuAn01_files/fb.ion1.svg" alt="" class="open-qoute">
+                  <blockquote>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </blockquote>
+                </div>
+              </div>
+              <!-- fb số 2 -->
+              <div class="feeback-item">
+                <!-- khối trái -->
+                <div class="info">
+                  <img src="./DuAn01_files/avt2.png" alt="" class="avt">
+                    <p class="member-name">Peter Moor</p>
+                    <p class="desc">Student of Web Design</p>
+                    <div class="dots">
+                      <span class="dot "></span>
+                      <span class="dot active"></span>
+                      <span class="dot"></span>
+                    </div>
+                  
+                </div>
+                <!-- khối phải -->
+                <div class="content">
+                  <img src="./DuAn01_files/fb.ion1.svg" alt="" class="open-qoute">
+                  <blockquote>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </blockquote>
+                </div>
+              </div>
+              <!-- fb số 3 -->
+              <div class="feeback-item">
+                <!-- khối trái -->
+                <div class="info">
+                  <img src="./DuAn01_files/avt3.png" alt="" class="avt">
+                    <p class="member-name">Peter Moor</p>
+                    <p class="desc">Student of Web Design</p>
+                    <div class="dots">
+                      <span class="dot"></span>
+                      <span class="dot "></span>
+                      <span class="dot active"></span>
+                    </div>
+                  
+                </div>
+                <!-- khối phải -->
+                <div class="content">
+                  <img src="./DuAn01_files/fb.ion1.svg" alt="" class="open-qoute">
+                  <blockquote>Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned." </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =======Features 1======== -->
+        <div class="features">
+          <div class="main-content">
+            <div class="body">
+              <!-- khối phải - hình ảnh -->
+              <div class="imges">
+                <img class="lower" src="./DuAn01_files/fea1.png" alt="">
+                <img src="./DuAn01_files/fea2.png" alt="">
+              </div>
+              <!-- khối trái CONTENT -->
+              <div class="content">
+                <h2 class="heading-lv2">Learner outcomes through our awesome platform</h2>
+                <p class="desc">87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career.</p>
+                <p class="desc">Lesson Impact Report (2022)</p>
+                <a href="http://127.0.0.1:5500/index.html#!" class="btn cta-btn">Sign Up</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ========Feadtures 2============= -->
+        <div class="features features-2nd">
+          <div class="main-content">
+            <div class="body">
+              <!-- khối phải - hình ảnh -->
+              <div class="imges">
+                <img class="lower" src="./DuAn01_files/fea3.avif" alt="">
+              </div>
+              <!-- khối trái CONTENT -->
+              <div class="content">
+                <h2 class="heading-lv2">Take the next step toward your personal and professional goals with Lesson.</h2>
+                <p class="desc">Take the next step toward. Join now to receive personalized  and more recommendations from the full Coursera catalog.</p>
+                <a href="http://127.0.0.1:5500/index.html#!" class="btn cta-btn">Join Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ========Our blog============= -->
+        <div class="blog">
+            <div class="main-content">
+              <!-- khối blog trên -->
+              <div class="blog-top">
+                <h2 class="heading-lv2">Our blog </h2>
+                <p class="desc">Read our regular travel blog and know the latest update of tour and travel</p>
+              </div>
+              <!-------khối blog dưới ------>
+              <div class="blog-list">
+                <!-- ------------- blog 1 --------------->
+                <div class="item">
+                  <a href="http://127.0.0.1:5500/index.html#!"> <img src="./DuAn01_files/blog1.png" alt="" class="thumb">
+                  </a>
+                 <div class="info">
+                    <span class="date">21 November 2021</span>
+                    <a href="http://127.0.0.1:5500/index.html#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn">Read More</a>
+                  </div>
+                </div>
+                <!-- blog 1.2-->
+                  <div class="item">
+                  <a href="http://127.0.0.1:5500/index.html#!"> <img src="./DuAn01_files/blog2.png" alt="" class="thumb">
+                  </a>
+                 <div class="info">
+                    <span class="date">21 November 2021</span>
+                    <a href="http://127.0.0.1:5500/index.html#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn">Read More</a>
+                 </div>
+                </div>
+                <!-- blog 1.3 -->
+                <div class="item">
+                  <a href="http://127.0.0.1:5500/index.html#!"> <img src="./DuAn01_files/blog3.png" alt="" class="thumb">
+                  </a>
+                <div class="info">
+                    <span class="date">21 November 2021</span>
+                    <a href="http://127.0.0.1:5500/index.html#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn">Read More</a>
+                  </div>
+                </div>
+                <!-- ------------- blog 2  --------------->
+                <div class="item">
+                  <a href="http://127.0.0.1:5500/index.html#!"> <img src="./DuAn01_files/blog1.png" alt="" class="thumb">
+                  </a>
+                 <div class="info">
+                    <span class="date">21 November 2021</span>
+                    <a href="http://127.0.0.1:5500/index.html#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn">Read More</a>
+                  </div>
+                </div>
+                <!-- blog 2.2 -->
+                  <div class="item">
+                  <a href="http://127.0.0.1:5500/index.html#!"> <img src="./DuAn01_files/blog2.png" alt="" class="thumb">
+                  </a>
+                 <div class="info">
+                    <span class="date">21 November 2021</span>
+                    <a href="http://127.0.0.1:5500/index.html#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn">Read More</a>
+                 </div>
+                </div>
+                <!-- blog 2.3 -->
+                <div class="item">
+                  <a href="http://127.0.0.1:5500/index.html#!"> <img src="./DuAn01_files/blog3.png" alt="" class="thumb">
+                  </a>
+                <div class="info">
+                    <span class="date">21 November 2021</span>
+                    <a href="http://127.0.0.1:5500/index.html#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn">Read More</a>
+                  </div>
+                </div>
+                <!-- ------------- blog 3  --------------->
+                <div class="item">
+                  <a href="http://127.0.0.1:5500/index.html#!"> <img src="./DuAn01_files/blog1.png" alt="" class="thumb">
+                  </a>
+                 <div class="info">
+                    <span class="date">21 November 2021</span>
+                    <a href="http://127.0.0.1:5500/index.html#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn">Read More</a>
+                  </div>
+                </div>
+                <!-- blog 3.2-->
+                  <div class="item">
+                  <a href="http://127.0.0.1:5500/index.html#!"> <img src="./DuAn01_files/blog2.png" alt="" class="thumb">
+                  </a>
+                 <div class="info">
+                    <span class="date">21 November 2021</span>
+                    <a href="http://127.0.0.1:5500/index.html#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn">Read More</a>
+                 </div>
+                </div>
+                <!-- blog 3.3 -->
+                <div class="item">
+                  <a href="http://127.0.0.1:5500/index.html#!"> <img src="./DuAn01_files/blog3.png" alt="" class="thumb">
+                  </a>
+                <div class="info">
+                    <span class="date">21 November 2021</span>
+                    <a href="http://127.0.0.1:5500/index.html#!"> <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                    </a>
+                    <a href="http://127.0.0.1:5500/index.html" class="btn">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- dấu 3 chấm  -->
+              <div class="dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+        </div>
+        <!-- ========Our blog============= -->
+
+      </div>
+    </main>
+     <!-- FOOTER -->
+     <footer class="footer">
+      <div class="main-content">
+        <div class="row">
+          <!-- cột 1 -->
+          <div class="colum">
+           <img src="./DuAn01_files/logo(1).svg" alt="lesson" class="logo">
+           <p class="desc">Need to help for your dream Career? trust us. With Lesson, study becomes a lot easier with us.</p>
+           <div class="socials">
+            <a href="http://127.0.0.1:5500/index.html">
+              <img src="./DuAn01_files/twitter.svg" alt="Twitter" class="icon">
+            </a>
+            <a href="http://127.0.0.1:5500/index.html">
+              <img src="./DuAn01_files/f.svg" alt="facebook" class="icon">
+            </a>
+            <a href="http://127.0.0.1:5500/index.html">
+              <img src="./DuAn01_files/in.svg" alt="LinkedIn" class="icon">
+            </a>
+            <a href="http://127.0.0.1:5500/index.html">
+              <img src="./DuAn01_files/instagram.svg" alt="instagram" class="icon">
+            </a>
+           </div>
+          </div>
+          <!-- cột 2 -->
+          <div class="colum">
+            <h3 class="title">Company</h3>
+            <ul class="list">
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">About Us</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">Features</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">Our Pricing</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">Latest News</a>
+              </li>
+            </ul>
+          </div>
+          <!-- cột 3 -->
+          <div class="colum">
+            <h3 class="title">Support</h3>
+            <ul class="list">
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">FAQ’s</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">Terms &amp; Conditions</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- cột 4 -->
+          <div class="colum">
+            <h3 class="title">Address</h3>
+            <ul class="list">
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!"><strong>Location:</strong> 27 Division St, New York, NY 10002, USA</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!"><strong>Email:</strong> email@gmail.com</a>
+              </li>
+              <li>
+                <a href="http://127.0.0.1:5500/index.html#!"><strong>Phone: </strong>+ 000 1234 567 890</a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+     </footer>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body><div style="position: absolute; top: 0px; z-index: 2147483647; display: block !important; overflow: unset;"><template shadowrootmode="open"><style>@import "chrome-extension://jdfkmiabjpfjacifcmihfdjhpnjpiick/css/content-script.css";
+</style><div class="body"><div class="turn-lights-overlay"></div><toasts id="toasts-container"></toasts></div></template></div><div class="corom-element" en2vi-version="3" style="position: absolute; top: 0px; left: 0px; right: 0px; height: 0px; margin: 0px; text-align: left; z-index: 2147483647; pointer-events: none; border: none; display: block;"><template shadowrootmode="open"><style>@import "chrome-extension://gfgbmghkdjckppeomloefmbphdfmokgd/css/common.css";
+@import "chrome-extension://gfgbmghkdjckppeomloefmbphdfmokgd/css/style.css";</style><style id="svelte-7xscto">.toast-container.svelte-7xscto{position:fixed;pointer-events:none;width:100%;height:100%;display:flex;flex-direction:column-reverse;align-items:center;z-index:1000;bottom:0;padding:16px}</style>   <div class="toast-container svelte-7xscto"></div></template></div></html>
